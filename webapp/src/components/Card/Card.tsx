@@ -22,6 +22,12 @@ const Card = ({
       <div className="p-4">
         <h3
           className="text-lg font-medium text-gray-900 mb-2"
+          data-testid={`card-productID-${ProductID}`}
+        >
+          {ProductID}
+        </h3>
+        <h3
+          className="text-lg font-medium text-gray-900 mb-2"
           data-testid={`card-productName-${ProductID}`}
         >
           {ProductName}

@@ -27,6 +27,9 @@ describe("Card", () => {
       "data-testid": `card-productPhotoURL-${ID}`,
     });
     await testInstance.findByProps({
+      "data-testid": `card-productID-${ID}`,
+    });
+    await testInstance.findByProps({
       "data-testid": `card-productName-${ID}`,
     });
     await testInstance.findByProps({
