@@ -35,9 +35,16 @@ docker build -t webapp:latest .
 
 To build the docker image for api.orders run the command bellow from the root of the `api.orders` directory
 
-```Bash
+````Bash
 docker build -t api.orders:latest .
-```
+
+### api.products
+
+To build the docker image for api.products run the command bellow from the root of the `api.products` directory
+
+```Bash
+docker build -t api.products:latest .
+````
 
 ### Starting the application
 
@@ -140,7 +147,7 @@ Database marz -> Table Orders(
 )
 ```
 
-Currently the `marz.Product.ProductPhotoURL` column contains no valid urls to for photos 
+Currently the `marz.Product.ProductPhotoURL` column contains no valid urls to for photos
 
 ```
 MariaDB [marz]> select * from Product;
